@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/rsl_favicon.png" type="image/x-icon">
+    <!-- === css === -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- === font-awesome === -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>About Us - RSL</title>
+</head>
+
+<style>
+    .hero-section {
+        background: linear-gradient(to right, #4e73df, #1cc88a);
+        color: white;
+        padding: 60px 0;
+    }
+
+    .mission-section {
+        background: #f8f9fc;
+        padding: 40px 20px;
+    }
+
+    .card {
+        border: none;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="box"></div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+    <div class="ball-cursor" id="ballCursor"></div>
+    <!-- === Header === -->
+    <header id="mainHeader" class="header" data-aos="fade-down">
+        <div class="container">
+            <div class="responsive_toggle">
+                <a href="index.html"><img src="./assets/images/log_shot.png" alt=""></a>
+                <i onclick="myFunction()" class="fa-solid fa-bars-staggered"></i>
+            </div>
+            <div class="main_header" id="responsive_toggle_button">
+                <div class="header_logo">
+                    <a href="index.html"><img src="./assets/images/log_shot.png" alt=""></a>
+                </div>
+                <div class="manu">
+                    <ul>
+                        <li><a href="vision-ai.html">Vision Ai</a></li>
+                        <li><a href="gan-ai.html">Gen Ai</a></li>
+                        <!-- <li><a href="industries.html">Industries</a></li> -->
+                        <li class="dropdown menU_drop">
+                            <a class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Industries</a>
+                            <ul class="dropdown-menu industries_megha">
+                                <li>
+                                    <a class="" href="adas-and-autonomous-vehicles.html">
+                                        <img src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e5dd36623e9dba03a3_ph_car-duotone.webp"
+                                            loading="lazy" alt="">
+                                        <span>ADAS & Autonomous Vehicles</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="retail-ecommerce.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e5a31aa73c7b2edf0c_fluent_building-retail-20-regular.webp">
+                                        <span>Retail & E-Commerces</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="healthcare-vision.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e415746c2e4b4d8866_healthicons_agriculture-outline.webp">
+                                        <span>healthcare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="banking-financial-services.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e5dd36623e9dba03a3_ph_car-duotone.webp">
+                                        <span>Banking, Financial Services, & Insurance</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="consumer-media.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b70219f0faefef8d3bea_ic_twotone-perm-media-1.webp">
+                                        <span>Consumer & Media</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="food-and-agriculture.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e51e600bdd59d34229_621266546f6e240dd1b2b331_manufacturing%201.webp">
+                                        <span>Robotics & Manufacturing</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown menU_drop">
+                            <a class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="blog-1.html">Blog 1</a></li>
+                                <li><a class="" href="blog-2.html">Blog 2</a></li>
+                                <li><a class="" href="blog-3.html">Blog 3</a></li>
+                                <li><a class="" href="blog-4.html">Blog 4</a></li>
+                                <li><a class="" href="blog-5.html">Blog 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="whywork.html">Why RSL</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="margin_to_100"><div class="" style="margin-top: 20px;"></div></div>
+
+    <section>
+        <div class="solving_problems">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4">
+                        <h2>Solving Real Problems</h2>
+                        <p>
+                            In today’s world, many people face barriers that hold them back. Whether it’s lack of access
+                            to
+                            decent jobs, fair pay, or opportunities to grow, these issues aren’t just numbers—they’re
+                            lived
+                            realities.
+                        </p>
+                        <p>
+                            At <strong>RSL</strong>, we’re here to change that. Our work is designed to help
+                            businesses
+                            unlock new potential while creating jobs that are fair, human-centered, and sustainable. We
+                            focus on
+                            bridging the gap between technology and people, ensuring that everyone, from low-income
+                            jobseekers
+                            to skilled professionals, gets a fair shot.
+                        </p>
+                        <p>
+                            But it’s not just about employment. It’s about making technology smarter, safer, and more
+                            ethical.
+                            We believe that <strong>Generative AI</strong>, <strong>Computer Vision</strong>, and
+                            <strong>Data
+                                Annotation</strong> can do incredible things when used responsibly.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="our_miss_img_box">
+                            <img src="https://media.licdn.com/dms/image/D4D12AQEckvW1vTRX7A/article-cover_image-shrink_720_1280/0/1699341618922?e=2147483647&v=beta&t=Rj86SWbugIEOzxq1NjeJNNfWGjOREy_iV0Xc3agP0-8"
+                                alt="Solving Real Problems">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="our_mission">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="our_miss_img_box">
+                            <img src="https://www.munro.agency/wp-content/uploads/2023/05/Munro-Agency-Blog-Feature-Images.jpg.webp"
+                                alt="Our Mission">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <h2 class="our_mission_heading">Our Mission</h2>
+                        <ul class="our_mission_cont">
+                            <li>
+                                <strong>1.</strong> Create opportunities for people facing the greatest barriers to
+                                formal work.
+                            </li>
+                            <li>
+                                <strong>2.</strong> Innovate responsibly by building ethical AI solutions.
+                            </li>
+                            <li>
+                                <strong>3.</strong> Support businesses in reaching their goals while making a positive
+                                social
+                                impact.
+                            </li>
+                        </ul>
+                        <p>
+                            This isn’t just talk. Every decision we make is guided by these principles. From the way we
+                            train
+                            our teams to how we work with partners, we’re committed to driving meaningful change every
+                            step of
+                            the way.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- counting ---- -->
+    <section>
+        <div class="counting">
+            <div class="container">
+                <div class="stats-container" id="stats-section">
+                    <div class="stat-box">
+                        <i class="fas fa-check-circle stat-icon"></i>
+                        <div class="coun_number">
+                            <div class="stat-number" data-target="100">0</div>
+                            <span>+</span>
+                        </div>
+                        <div class="stat-text">Projects Completed</div>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-smile stat-icon"></i>
+                        <div class="coun_number">
+                            <div class="stat-number" data-target="40">0</div>
+                            <span>+</span>
+                        </div>
+                        <div class="stat-text">Happy Customers</div>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-calendar-alt stat-icon"></i>
+                        <div class="coun_number">
+                            <div class="stat-number" data-target="10">0</div>
+                            <span>+</span>
+                        </div>
+                        <div class="stat-text">Years Experience</div>
+                    </div>
+                    <div class="stat-box">
+                        <i class="fas fa-users stat-icon"></i>
+                        <div class="coun_number">
+                            <div class="stat-number" data-target="200">0 </div>
+                            <span>+</span>
+                        </div>
+                        <div class="stat-text">Tech Developers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A Team That Cares Section -->
+    <!-- <section class="team">
+        <div class="container">
+            <div class="section_heading text-center">
+                <h2>A Team That <span data-aos="flip-right"> Cares</span></h2>
+                <p> RSL wouldn’t be here without our amazing team. Founded by Arusha Lodha, Rupesh Munot, and
+                    Poonam Bora, we’re a group of people who genuinely care about doing the right thing.
+                </p>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card_team">
+                        <img src="https://via.placeholder.com/200" alt="Arusha Lodha">
+                        <div class="card-body">
+                            <h5 class="card-title">Arusha Lodha</h5>
+                            <p class="card-text text-muted">Co-Founder & Visionary</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card_team">
+                        <img src="https://via.placeholder.com/200" alt="Rupesh Munot">
+                        <div class="card-body">
+                            <h5 class="card-title">Rupesh Munot</h5>
+                            <p class="card-text text-muted">Co-Founder & Strategist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card_team">
+                        <img src="https://via.placeholder.com/200" alt="Poonam Bora">
+                        <div class="card-body">
+                            <h5 class="card-title">Poonam Bora</h5>
+                            <p class="card-text text-muted">Co-Founder & Innovator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+
+        </style>
+    </section> -->
+
+    <!-- What We Do Section -->
+    <section class="what-we-do">
+        <div class="container">
+            <div class="section_heading text-center" data-aos="fade-up" data-aos-duration="1000">
+                <h2> What We <span data-aos="flip-right">Do</span> </h2>
+                <p>Here’s how we make an impact through technology and responsible innovation.</p>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card_to_way_inner_a">
+                        <div class="card-body">
+                            <div class="icon mb-3" style="font-size: 40px; color: #4e73df;">
+                                <i class="bi bi-lightbulb"></i>
+                            </div>
+                            <h5 class="card-title">Generative AI for a Better Future</h5>
+                            <p class="card-text">
+                                We harness the power of Generative AI to simplify complex problems. From creating more
+                                efficient workflows to improving customer experiences, our AI solutions are designed to
+                                make life easier for everyone involved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card_to_way_inner_a">
+                        <div class="card-body">
+                            <div class="icon mb-3" style="font-size: 40px; color: #1cc88a;">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                            <h5 class="card-title">Computer Vision for Smarter Systems</h5>
+                            <p class="card-text">
+                                Computer Vision is changing the game for industries like healthcare, retail, and
+                                security. We use it to create smarter systems that reduce errors, improve accuracy, and
+                                make technology more intuitive.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card_to_way_inner_a">
+                        <div class="card-body">
+                            <div class="icon mb-3" style="font-size: 40px; color: #f6c23e;">
+                                <i class="bi bi-database"></i>
+                            </div>
+                            <h5 class="card-title">Data Annotation That’s Ethical</h5>
+                            <p class="card-text">
+                                Good data is the backbone of AI, and our data annotation services ensure it’s done
+                                right. But we don’t stop at quality—we also prioritize ethical practices, ensuring that
+                                the people behind the work are treated fairly and respectfully.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="solving_problems">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4">
+                        <h2>Why Choose Us?</h2>
+                        <p>
+                            The world doesn’t need more companies—it needs companies that care. RSL is different
+                            because we focus on what matters:
+                        </p>
+                        <ul class="our_mission_cont">
+                            <li>Helping people overcome barriers. </li>
+                            <li>Building technology that’s smart and ethical.</li>
+                            <li>Driving meaningful change in communities around the world.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://media.istockphoto.com/id/655887334/photo/why-choose-us.jpg?s=612x612&w=0&k=20&c=TJLPS91NH3rTJhdcAgB92M984kcJ80S910X-4XnTpNE="
+                            alt="Solving Real Problems" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="solving_problems">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://media.istockphoto.com/id/1391522870/photo/the-text-make-an-impact-appearing-behind-torn-brown-paper.jpg?s=612x612&w=0&k=20&c=3Y4itV2INbDZglK-yeQLY1zPY4xTRW3g5uvyevLRSJk="
+                            alt="Solving Real Problems" class="img-fluid rounded">
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <h2>Let’s Make an Impact Together</h2>
+                        <p>The challenges are big, but so are the opportunities. If you’re ready to work with a team
+                            that’s dedicated to creating solutions that matter, let’s connect. At RSL, we believe
+                            that when technology and people come together, incredible things can happen.</p>
+                        <p>
+                            Ready to learn more? Reach out today and let’s create a better future—together.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="footer_box">
+                        <div class="logo_footer">
+                            <img src="./assets/images/log_shot.png" alt="">
+                        </div>
+                        <h2>social media</h2>
+                        <div class="social_media_footer">
+                            <a href="https://www.facebook.com/rslsolution-" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <!-- <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                            <a href="https://www.linkedin.com/company/rsl-solution-private-limited/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/rslsolution/-" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h1>Contact Us</h1>
+                    <ul class="footer_menu">
+                        <li><b>Email:</b> <a href="#">Contact@rslsolution.com</a></li>
+                        <li><b>Phone Number:</b> <a href="tel:91 9941041415">+91 9941041415 </a></li>
+                        <li><b>Location:</b> s n 80 walhekarwadi sector
+                            no 32 sayali complex road nigdi pimpri-chinchwad maharashtra 411033</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h1>Form</h1>
+                    <div class="footer_form">
+                        <div class="input_group">
+                            <span>Name</span>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="input_group">
+                            <span>Email</span>
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="input_group">
+                            <span>Contact Number</span>
+                            <input type="number" placeholder="Number">
+                        </div>
+                        <div class="Button">
+                            <a class="Button_a" href="#">Book a call </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                © 2024 RSL. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+
+    </script>
+
+</body>
+
+</html>

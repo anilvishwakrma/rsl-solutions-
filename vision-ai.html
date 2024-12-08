@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/rsl_favicon.png" type="image/x-icon">
+    <!-- === css === -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- === font-awesome === -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>Vision AI - RSL</title>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="box"></div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+
+    <div class="ball-cursor" id="ballCursor"></div>
+    <!-- === Header === -->
+    <header id="mainHeader" class="header" data-aos="fade-down">
+        <div class="container">
+            <div class="responsive_toggle">
+                <a href="index.html"><img src="./assets/images/log_shot.png" alt=""></a>
+                <i onclick="myFunction()" class="fa-solid fa-bars-staggered"></i>
+            </div>
+            <div class="main_header" id="responsive_toggle_button">
+                <div class="header_logo">
+                    <a href="index.html"><img src="./assets/images/log_shot.png" alt=""></a>
+                </div>
+                <div class="manu">
+                    <ul>
+                        <li><a href="vision-ai.html">Vision Ai</a></li>
+                        <li><a href="gan-ai.html">Gen Ai</a></li>
+                        <!-- <li><a href="industries.html">Industries</a></li> -->
+                        <li class="dropdown menU_drop">
+                            <a class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Industries</a>
+                            <ul class="dropdown-menu industries_megha">
+                                <li>
+                                    <a class="" href="adas-and-autonomous-vehicles.html">
+                                        <img src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e5dd36623e9dba03a3_ph_car-duotone.webp"
+                                            loading="lazy" alt="">
+                                        <span>ADAS & Autonomous Vehicles</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="retail-ecommerce.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e5a31aa73c7b2edf0c_fluent_building-retail-20-regular.webp">
+                                        <span>Retail & E-Commerces</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="healthcare-vision.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e415746c2e4b4d8866_healthicons_agriculture-outline.webp">
+                                        <span>healthcare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="banking-financial-services.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e5dd36623e9dba03a3_ph_car-duotone.webp">
+                                        <span>Banking, Financial Services, & Insurance</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="consumer-media.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b70219f0faefef8d3bea_ic_twotone-perm-media-1.webp">
+                                        <span>Consumer & Media</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="food-and-agriculture.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e51e600bdd59d34229_621266546f6e240dd1b2b331_manufacturing%201.webp">
+                                        <span>Robotics & Manufacturing</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown menU_drop">
+                            <a class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="blog-1.html">Blog 1</a></li>
+                                <li><a class="" href="blog-2.html">Blog 2</a></li>
+                                <li><a class="" href="blog-3.html">Blog 3</a></li>
+                                <li><a class="" href="blog-4.html">Blog 4</a></li>
+                                <li><a class="" href="blog-5.html">Blog 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="whywork.html">Why RSL</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="margin_to_100"><div class="" style="margin-top: 50px;"></div></div>
+
+    <!-- === What is Vision AI? === -->
+    <section>
+        <div class="gan_ai_to_box_ul">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="gan_ai_box_">
+                            <h1>What is Vision AI?</h1>
+                            <p>Vision AI, or Computer Vision, is a technology that helps computers interpret and analyze
+                                visual data like images and videos. It mimics the way humans see, but it does so with
+                                precision and scale that humans can't match. From identifying objects to detecting
+                                patterns,
+                                Vision AI opens up endless possibilities for innovation.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="gan_ai_box_">
+                            <div class="gan_ai_box_IMG">
+                                <img src="./assets/images/gan_ai_1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === industries === -->
+    <section>
+        <div class="industries-section-enhanced gan_industries">
+            <div class="container">
+                <div class="section_heading text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <h2> Benefits of <span data-aos="flip-right">Vision </span> AI</h2>
+                    <p>Vision AI brings a host of benefits to your business. Here’s why it’s worth investing in:</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="industry-card-enhanced">
+                            <div class="icon-container-gradient">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h4>Efficiency</h4>
+                            <p>Automates repetitive tasks and reduces human error</p>
+                            <a href="#" class="learn-more-enhanced">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="industry-card-enhanced">
+                            <div class="icon-container-gradient">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Scalability</h4>
+                            <p>Processes vast amounts of visual data quickly. </p>
+                            <a href="#" class="learn-more-enhanced">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="industry-card-enhanced">
+                            <div class="icon-container-gradient">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <h4>Cost Savings</h4>
+                            <p>Reduces costs by optimizing workflows and resources.</p>
+                            <a href="#" class="learn-more-enhanced">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="industry-card-enhanced">
+                            <div class="icon-container-gradient">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Better Decision Making</h4>
+                            <p>Provides actionable insights from visual data.</p>
+                            <a href="#" class="learn-more-enhanced">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === What is Vision AI? === -->
+    <section>
+        <div class="gan_ai_to_box_ul">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="gan_ai_box_">
+                            <div class="gan_ai_box_IMG">
+                                <img src="./assets/images/gan_ai_2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="gan_ai_box_">
+                            <h1>Why Does Vision AI Matter?</h1>
+                            <p>We live in a world filled with visual information. Every second, billions of images and
+                                videos are captured globally. With Vision AI, businesses can unlock hidden insights from
+                                this visual data. Imagine automating tasks like identifying defective products on a
+                                production line or ensuring security through facial recognition. Vision AI makes these
+                                processes faster and smarter.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- time-line-sutep -->
+    <section>
+        <div class="time_line_setup_gan_ai">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="gan_ai_timeline_steps aos-init aos-animate" data-aos="fade-up">
+                            <div class="gan_ai_timeline_step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="Data Collection">
+                                    <div class="gai_ai_inner_circle"></div>
+                                    <p class="time_gan_heding">Data Collection</p>
+                                    <p>Label the data so the AI knows what to look
+                                        for</p>
+                                </div>
+                            </div>
+                            <div class="gan_ai_timeline_step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="2004">
+                                    <div class="gai_ai_inner_circle"></div>
+                                    <p class="time_gan_heding">Annotation</p>
+                                    <p>Launched Trello</p>
+                                </div>
+                            </div>
+                            <div class="gan_ai_timeline_step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="2005">
+                                    <div class="gai_ai_inner_circle"></div>
+                                    <p class="time_gan_heding">Model Training</p>
+                                    <p>Train the AI using the labeled data.</p>
+                                </div>
+                            </div>
+                            <div class="gan_ai_timeline_step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="2010">
+                                    <div class="gai_ai_inner_circle"></div>
+                                    <p class="time_gan_heding">Deployment</p>
+                                    <p>Use the trained model in your business environment. </p>
+                                </div>
+                            </div>
+                            <div class="gan_ai_timeline_step mb-0">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="2020">
+                                    <div class="gai_ai_inner_circle"></div>
+                                    <p class="time_gan_heding">Continuous Improvement</p>
+                                    <p>Fine-tune the model with new data over time. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- === What is Vision AI? === -->
+    <section>
+        <div class="gan_ai_to_box_ul">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="gan_ai_box_">
+                            <div class="gan_ai_box_IMG">
+                                <img src="./assets/images/gan_ai_3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="gan_ai_box_">
+                            <h1>How RSL Solutions Makes Vision AI Work for You</h1>
+                            <p>At RSL Solutions, we specialize in creating Vision AI tools that solve real-world
+                                problems. We don’t just build generic models; we develop solutions tailored to your
+                                specific needs. Whether it's analyzing satellite imagery for environmental studies or
+                                automating traffic management through AI-powered cameras, we’ve got you covered.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === What is Vision AI? === -->
+    <section>
+        <div class="gan_single_cotent">
+            <div class="container">
+                <div class="gan_single_cotent_text">
+                    <div class="section_heading text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <h2> Ready to Bring Vision AI to Your <span data-aos="flip-right">Business</span> ?</h2>
+                        <p>Whether you’re new to Vision AI or looking to enhance your existing systems, RSL Solutions
+                            can help. Let’s turn your ideas into smart solutions. Get in touch with us today to see how
+                            Vision AI can elevate your business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="footer_box">
+                        <div class="logo_footer">
+                            <img src="./assets/images/log_shot.png" alt="">
+                        </div>
+                        <h2>social media</h2>
+                        <div class="social_media_footer">
+                            <a href="https://www.facebook.com/rslsolution-" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <!-- <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                            <a href="https://www.linkedin.com/company/rsl-solution-private-limited/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/rslsolution/-" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h1>Contact Us</h1>
+                    <ul class="footer_menu">
+                        <li><b>Email:</b> <a href="#">Contact@rslsolution.com</a></li>
+                        <li><b>Phone Number:</b> <a href="tel:91 9941041415">+91 9941041415 </a></li>
+                        <li><b>Location:</b> s n 80 walhekarwadi sector
+                            no 32 sayali complex road nigdi pimpri-chinchwad maharashtra 411033</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h1>Form</h1>
+                    <div class="footer_form">
+                        <div class="input_group">
+                            <span>Name</span>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="input_group">
+                            <span>Email</span>
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="input_group">
+                            <span>Contact Number</span>
+                            <input type="number" placeholder="Number">
+                        </div>
+                        <div class="Button">
+                            <a class="Button_a" href="#">Book a call </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                © 2024 RSL. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+
+
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+
+    </script>
+</body>
+
+</html>

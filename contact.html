@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/rsl_favicon.png" type="image/x-icon">
+    <!-- === css === -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- === font-awesome === -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>Vision AI - RSL</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="box"></div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+    <div class="ball-cursor" id="ballCursor"></div>
+    <!-- === Header === -->
+    <header id="mainHeader" class="header" data-aos="fade-down">
+        <div class="container">
+            <div class="responsive_toggle">
+                <a href="index.html"><img src="./assets/images/log_shot.png" alt=""></a>
+                <i onclick="myFunction()" class="fa-solid fa-bars-staggered"></i>
+            </div>
+            <div class="main_header" id="responsive_toggle_button">
+                <div class="header_logo">
+                    <a href="index.html"><img src="./assets/images/log_shot.png" alt=""></a>
+                </div>
+                <div class="manu">
+                    <ul>
+                        <li><a href="vision-ai.html">Vision Ai</a></li>
+                        <li><a href="gan-ai.html">Gen Ai</a></li>
+                        <!-- <li><a href="industries.html">Industries</a></li> -->
+                        <li class="dropdown menU_drop">
+                            <a class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Industries</a>
+                            <ul class="dropdown-menu industries_megha">
+                                <li>
+                                    <a class="" href="adas-and-autonomous-vehicles.html">
+                                        <img src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e5dd36623e9dba03a3_ph_car-duotone.webp"
+                                            loading="lazy" alt="">
+                                        <span>ADAS & Autonomous Vehicles</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="retail-ecommerce.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e5a31aa73c7b2edf0c_fluent_building-retail-20-regular.webp">
+                                        <span>Retail & E-Commerces</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="healthcare-vision.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e415746c2e4b4d8866_healthicons_agriculture-outline.webp">
+                                        <span>healthcare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="banking-financial-services.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e5dd36623e9dba03a3_ph_car-duotone.webp">
+                                        <span>Banking, Financial Services, & Insurance</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="consumer-media.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b70219f0faefef8d3bea_ic_twotone-perm-media-1.webp">
+                                        <span>Consumer & Media</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="food-and-agriculture.html">
+                                        <img loading="lazy" alt=""
+                                            src="https://cdn.prod.website-files.com/65844ee8089ad9744a76677c/6596b9e51e600bdd59d34229_621266546f6e240dd1b2b331_manufacturing%201.webp">
+                                        <span>Robotics & Manufacturing</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown menU_drop">
+                            <a class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="blog-1.html">Blog 1</a></li>
+                                <li><a class="" href="blog-2.html">Blog 2</a></li>
+                                <li><a class="" href="blog-3.html">Blog 3</a></li>
+                                <li><a class="" href="blog-4.html">Blog 4</a></li>
+                                <li><a class="" href="blog-5.html">Blog 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="whywork.html">Why RSL</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <section class="why_to_work_page"
+        style="background-image: url(https://sbinewyork.statebank/documents/1989823/1991593/Header_Contact+us.jpg/0fee9516-615e-7698-80f1-5f30236e02bd?t=1597658685554);">
+        <div class="container text-center">
+            <div class="">
+                <div class="section_heading text-center" data-aos="fade-up" data-aos-duration="3000">
+                    <h2>Contact Us - <span data-aos="flip-right">RSL</span></h2>
+                    <div class="inner_menu">
+                        <ul>
+                            <li><a href="index.html">Home</a> /</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <style>
+
+    </style>
+    <section class="Contact_page"
+        style="background-image: url(https://media.istockphoto.com/id/1311934969/photo/contact-us.jpg?s=612x612&w=0&k=20&c=_vmYyAX0aFi-sHH8eYS-tLLNfs1ZWXnNB8M7_KWwhgg=);">
+        <div class="container">
+            <div class="section_heading text-center" data-aos="fade-up" data-aos-duration="3000">
+                <h2> <span data-aos="flip-right">Contact</span> Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, fugiat.</p>
+            </div>
+            <div class="row gy-5">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i> <b>Address:</b> <br> s n 80 walhekarwadi sector
+                                no 32 sayali complex road nigdi pimpri-chinchwad maharashtra 411033</li>
+                            <li><i class="fa-solid fa-phone"></i> <b>Phone:</b> <br> <a href="tel:91 9941041415">+91
+                                    9941041415 </a></li>
+                            <li><i class="fa-solid fa-envelope"></i> <b>Email:</b> <br> <a
+                                    href="#">Contact@rslsolution.com</a></li>
+                        </ul>
+                        <div class="contact_socil_media">
+                            <h2>social media</h2>
+                            <div class="social_media_footer">
+                                <a href="https://www.facebook.com/rslsolution-" target="_blank"><i
+                                        class="fab fa-facebook"></i></a>
+                                <!-- <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                                <a href="https://www.linkedin.com/company/rsl-solution-private-limited/"
+                                    target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/rslsolution/-" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <h3>Send Message</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Number</label>
+                                <input type="email" class="form-control" id="number" placeholder="Enter your number">
+                            </div>
+                            <!-- <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Type your message..."></textarea>
+                            </div> -->
+                            <div class="Button w-100">
+                                <a class="Button_a w-100" href="#">Send </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="cont_map">
+            <div class="container">
+                <!-- Google Map -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60493.46847895548!2d73.70759998290961!3d18.626184954477054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9883a388ffd%3A0x1b06454114c0f1cb!2sPunawale%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411033!5e0!3m2!1sen!2sin!4v1733416673393!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="footer_box">
+                        <div class="logo_footer">
+                            <img src="./assets/images/log_shot.png" alt="">
+                        </div>
+                        <h2>social media</h2>
+                        <div class="social_media_footer">
+                            <a href="https://www.facebook.com/rslsolution-" target="_blank"><i
+                                    class="fab fa-facebook"></i></a>
+                            <!-- <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                            <a href="https://www.linkedin.com/company/rsl-solution-private-limited/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/rslsolution/-" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h1>Contact Us</h1>
+                    <ul class="footer_menu">
+                        <li><b>Email:</b> <a href="#">Contact@rslsolution.com</a></li>
+                        <li><b>Phone Number:</b> <a href="tel:91 9941041415">+91 9941041415 </a></li>
+                        <li><b>Location:</b> s n 80 walhekarwadi sector
+                            no 32 sayali complex road nigdi pimpri-chinchwad maharashtra 411033</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h1>Form</h1>
+                    <div class="footer_form">
+                        <div class="input_group">
+                            <span>Name</span>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="input_group">
+                            <span>Email</span>
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="input_group">
+                            <span>Contact Number</span>
+                            <input type="number" placeholder="Number">
+                        </div>
+                        <div class="Button">
+                            <a class="Button_a" href="#">Book a call </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                © 2024 RSL. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+
+    </script>
+</body>
+
+</html>
